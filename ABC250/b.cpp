@@ -9,7 +9,7 @@ const int INF = 1e9;
 
 int main()
 {
-	int n, a, b, paintFlag = 1;
+	int n, a, b;
 	cin >> n >> a >> b;
 	rep(i, n)
 	{
@@ -19,10 +19,10 @@ int main()
 			{
 				rep(l, b)
 				{
-					if (i % 2 == k % 2 == 0)
-						cout << "#";
-					else
+					if (i % 2 == k % 2)
 						cout << ".";
+					else
+						cout << "#";
 				}
 			}
 			cout << endl;
